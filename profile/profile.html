@@ -83,11 +83,12 @@
 
         .info-box {
             width: 30%;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: 0;
             padding: 10px;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             text-align: center;
+            margin: 0 10px; /* Adds horizontal space between boxes */
         }
 
         .info-box h3 {
@@ -127,7 +128,7 @@
 
             .info-box {
                 width: 80%;
-                margin-bottom: 10px;
+                margin-bottom: 10px; /* Adds space between stacked boxes */
             }
         }
 
@@ -148,6 +149,10 @@
             .profile-bio {
                 font-size: 0.95em;
             }
+
+            .info-box {
+                margin: 0 15px; /* Adds more space between boxes for larger screens */
+            }
         }
 
         @media (min-width: 1025px) and (max-width: 1440px) {
@@ -167,6 +172,10 @@
             .profile-bio {
                 font-size: 1em;
             }
+
+            .info-box {
+                margin: 0 20px; /* Adds even more space between boxes for larger screens */
+            }
         }
 
         @media (min-width: 1441px) {
@@ -185,6 +194,10 @@
 
             .profile-bio {
                 font-size: 1.1em;
+            }
+
+            .info-box {
+                margin: 0 25px; /* Adds maximum space between boxes for very large screens */
             }
         }
     </style>
@@ -207,22 +220,26 @@
         <div class="profile-info-boxes">
             <div class="info-box">
                 <h3>Hobby</h3>
-                <p>Volleyball</p>
+                <p>Bible</p>
+                <p>VolleyBall</p>
                 <p>Drawing</p>
                 <p>Adventure</p>
                 <p>Bible</p>
+                
             </div>
             <div class="info-box">
-                <h3>Favorite</h3>
+                <h3>Favorites</h3>
+                <p>Bible</p>
                 <p>Fries</p>
-                <p>Cat</p></p>
-                <p>Color Black Things</p>
+                <p>Color Black things</p>
+
             </div>
             <div class="info-box">
                 <h3>Likes</h3>
-                <p>Comics</p>
-                <p>Gym</p>
-                <p>Hiking</p>
+                <p>Bible</p>
+                <p>Music</p>
+                <p>Cats</p>
+                <p>comics</p>
             </div>
         </div>
     </div>
