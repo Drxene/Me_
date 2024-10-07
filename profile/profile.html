@@ -12,6 +12,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
         }
 
         /* 4K Video background styling */
@@ -36,7 +37,6 @@
 
         .profile-container {
             text-align: center;
-            
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -74,6 +74,33 @@
             color: #666;
         }
 
+        /* New Boxes for Hobby, Favorite, and Likes */
+        .profile-info-boxes {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .info-box {
+            width: 30%;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .info-box h3 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .info-box p {
+            font-size: 1em;
+            color: #666;
+        }
+
         /* Media Queries */
         @media (max-width: 600px) {
             .profile-container {
@@ -91,6 +118,16 @@
 
             .profile-bio {
                 font-size: 0.9em;
+            }
+
+            .profile-info-boxes {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .info-box {
+                width: 80%;
+                margin-bottom: 10px;
             }
         }
 
@@ -165,8 +202,29 @@
         </div>
         <div class="profile-name">DRIXENE</div>
         <div class="profile-bio">A RISE</div>
+        
+        <!-- New Info Boxes Section -->
+        <div class="profile-info-boxes">
+            <div class="info-box">
+                <h3>Hobby</h3>
+                <p>Volleyball</p>
+                <p>Drawing</p>
+                <p>Adventure</p>
+                <p>Bible</p>
+            </div>
+            <div class="info-box">
+                <h3>Favorite</h3>
+                <p>Fries</p>
+                <p>Cat</p></p>
+                <p>Color Black Things</p>
+            </div>
+            <div class="info-box">
+                <h3>Likes</h3>
+                <p>Comics</p>
+                <p>Gym</p>
+                <p>Hiking</p>
+            </div>
+        </div>
     </div>
-
-    
 </body>
 </html>
